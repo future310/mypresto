@@ -13,6 +13,5 @@ import com.google.inject.BindingAnnotation;
 @Target(ElementType.METHOD)
 @BindingAnnotation
 public @interface Config {
-
 	String value();
 }
