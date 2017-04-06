@@ -15,3 +15,4 @@ import com.google.inject.BindingAnnotation;
 public @interface Config {
 	String value();
 }
+ 
