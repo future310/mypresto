@@ -12,6 +12,6 @@ import com.google.inject.BindingAnnotation;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @BindingAnnotation
-public @interface DefaultConfig {
+public @interface DefunctConfig {
 	String[] value();
 }
