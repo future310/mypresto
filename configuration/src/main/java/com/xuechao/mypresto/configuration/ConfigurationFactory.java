@@ -21,6 +21,7 @@ import com.xuechao.mypresto.configuration.Problems.Monitor;
 public class ConfigurationFactory {
 	private final Map<String, String> properties;
 	private final Problems.Monitor monitor;
+	private final Set<ConfigurationProvider<?>> registeredProviders = Sets.newConcurrentHashSet();
 	private final Set<String> usedProperties = Sets.newConcurrentHashSet();
 	private final ListMultimap<Key<?>, ConfigDefaultsHolder<?>> registeredDefaultConfigs = Multimaps
 			.synchronizedListMultimap(ArrayListMultimap.create());
